@@ -8,8 +8,11 @@ class EntriesController < ApplicationController
         #show page usually shows a single instance of that type of data
         render :show
     end
-
-
-
+    def new
+        render :new
+    end
+    def create
+        redirect_to enteries_url 
+    end
 
 end
