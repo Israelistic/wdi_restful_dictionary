@@ -12,7 +12,13 @@ class EntriesController < ApplicationController
         render :new
     end
     def create
-        redirect_to enteries_url 
+        redirect_to enteries_url
+    end
+    def edit
+        render :edit
+    end
+    def update
+        redirect_to entry_url(params[:id])
     end
 
 end
